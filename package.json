@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "sequelize": "^5.8.12",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha api/user/user.spec.js -w -exit",
+    "start": "node bin/www.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
